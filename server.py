@@ -8,8 +8,8 @@ PORT = 8080
 name = os.environ['NAME']
 if name == None or len(name) == 0:
   name = "world"
-MESSAGE = "<html><meta charset="utf-8"/><body>Hello こんにちは, " + name + "!</body></html>"
-print("Message: '" + MESSAGE + "'")
+MESSAGE = "<html><meta charset=\"utf-8\"/><body>Hello こんにちは, " + name + "!</body></html>"
+print(MESSAGE)
 
 app = Flask(__name__)
 
